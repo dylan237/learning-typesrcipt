@@ -49,16 +49,17 @@ var sam: IPerson2 = {
 interface IPerson3 {
   name: string,
   age?: number,
-  [propName: string]: any;
+  [key: string]: any;   // key 可以隨意命名
 }
 
 var jay: IPerson3 = {
   name: 'Jay',
-  gender: 'male'
+  gender: 'male',
+  yo: 'yo'
 }
-// 使用 [propName: string] 定義了任意屬性取 string 型別的值。
+// 使用 [key: string] 定義了任意屬性取 string 型別的值。
 
-// 注意: 一旦定義了任意屬性，那麼確定屬性和可選屬性的型別都必須是它的型別的子集, 亦即 name 及 age 都必須是 propName 所指定的型別
+// 注意: 一旦定義了任意屬性，那麼確定屬性和可選屬性的型別都必須是它的型別的子集, 亦即 name 及 age 都必須是 key 所指定的型別
 // ** 子集： 如 null 和 undefined 是所有屬性的子集 **
 
 interface IPerson4 {
@@ -78,7 +79,7 @@ interface IPerson5 {
 }
 
 var ting: IPerson5 = {
-  id: 89757,
+  id: 1,
   name: 'Ting',
   gender: 'male'
 }
