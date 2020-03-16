@@ -37,4 +37,3 @@ console.log(myFavoriteNumber.length); // 編譯時報錯
 
 
 
-

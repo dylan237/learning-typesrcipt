@@ -65,7 +65,7 @@ var jay: IPerson3 = {
 interface IPerson4 {
   name: string,
   age?: number,  // 報錯, age 型別必須是 string 或 string 的子集
-  [propName: string]: string
+  [key: string]: string
 }
 
 /* 只讀屬性 */
@@ -75,7 +75,7 @@ interface IPerson5 {
   readonly id: number,
   name: string,
   age?: number,
-  [propName: string]: any
+  [key: string]: any
 }
 
 var ting: IPerson5 = {

@@ -27,7 +27,7 @@ interface NumberArray {
 // 不過有一種情況例外，那就是它常用來表示類別陣列。
 
 /* 四、類別陣列 */
-// 類陣列（Array-like Object）不是陣列型別，比如 arguments：類別陣列（Array-like Object）不是陣列型別，比如 arguments：
+// 類陣列（Array-like Object）不是陣列型別，比如 arguments：
 function sum() {
   let args: number[] = arguments;
 }

@@ -28,7 +28,6 @@ anyThing.myName.setFirstName('Cat');
 
 // 可以認為，宣告一個變數為任意值之後，對它的任何操作，返回的內容的型別都是任意值。
 
-
 /* 二、未宣告型別的變數 */
 var something
 something = 'seven';

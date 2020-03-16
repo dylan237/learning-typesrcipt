@@ -31,13 +31,13 @@ var unusable: void = null;
 /* 三、Null 和 Undefined */
 
 // 在 TypeScript 中，可以使用 null 和 undefined 來定義這兩個原始資料型別：
-var u: undefined = undefined
-var n: null = null
+var u: undefined = undefined;
+var n: null = null;
 
 // 與 void 的區別是，『 undefined 和 null 是所有型別的子型別 』。也就是說 undefined 型別的變數，可以賦值給 number 型別的變數：
 // 這樣不會報錯
-var num: number = u;
-var num: number = n;
+var num: number = undefined;
+var num: number = null;
 
 // 而 void 型別的變數不能賦值給 number 型別的變數：
 var u2: void
